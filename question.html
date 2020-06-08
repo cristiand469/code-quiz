@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="question.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="container2">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+      </section>
+    <div class="home-box custom-box ">
+        <h3>Instruction:</h3>
+        <p>Total number of question: <span class="total-question"></span></p>
+       <p>Timer: 15sec</p>
+        <button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+    
+    <div class="quiz-box custom-box hide">
+        <div class="question-number">
+        </div>
+        <div class="question-text">
+  
+        </div>
+        <div class="option-container">
+           
+        </div>
+        <div class="next-question-btn">
+            <button type="button" class="btn" onclick="next()">NEXT</button>
+        </div>
+        <div class="answers-indicator">
+          
+        </div>
+        <div class="timer"></div>
+       
+    </div>
+    <div class="result-box custom-box hide">
+      <h1>Quiz Result</h1>
+      <table>
+          <tr>
+              <td>Total Question</td>
+              <td><Span class="total-question"></Span></td>
+          </tr>
+          <tr>
+            <td>Attempt</td>
+            <td><Span class="total-attempt"></Span></td>
+        </tr>
+        <tr>
+            <td>Correct</td>
+            <td><Span class="total-correct"></Span></td>
+        </tr>
+        <tr>
+            <td>Wrong</td>
+            <td><Span class="total-wrong"></Span></td>
+        </tr>
+        <tr>
+            <td>Precentage</td>
+            <td><Span class="percentage"></Span></td>
+        </tr>
+        <tr>
+            <td>Your Total Score</td>
+            <td><Span class="total-score">  </Span></td>
+        </tr>
+      </table>
+      <button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+      <button type="button" class="btn" onclick="goToHome()">Go To Home</button>
+    </div>
+<script src="quiz.js"></script>    
+<script src="question.js"></script>    
+</body>
+</html>
